@@ -1,0 +1,47 @@
+*{
+	overflow: hidden;
+}
+body{
+    background: url(../img/giphy.gif) no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+}
+
+#portada {
+	position: relative;
+}
+
+.contenedor{
+	padding: 0px;
+	height: 100vh;
+	
+}
+.botones{
+	width: 100%;
+	position: absolute;
+	bottom: 1em;
+	font-weight: 300;
+	
+}
+
+.logo{
+	width: 50%;
+	margin-bottom: 4em;
+}
+.enlaces{
+	text-decoration: none;
+	font-size: 1.1em;
+	font-family: 'Raleway', sans-serif;
+	padding: 0.4em 2em;
+}
+
+.b-transparent{
+	background-color: transparent;
+	color: white;
+}
+
+.b-redsoft{
+	background-color: #F95759;
+	color: white;
+}
