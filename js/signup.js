@@ -15,7 +15,7 @@ $(document).ready(function() {
 	function longitud(evento){
 		var longitud = $(this).val().length;
 		if (longitud == 9) {
-			$("#nextstep").attr("href", "singupdos.html");
+			$("#nextstep").attr("href", "signupdos.html");
 		} else if ((longitud > 9)){
 			$("#nextstep").removeAttr("href");
 			sweetAlert("Error...", "ingrese nùmero válido de 9 dígitos", "error");
@@ -29,7 +29,7 @@ $(document).ready(function() {
 		var numeroRandom = Math.round(Math.random()*900) + 99;
 		if(numero == 9){
 			alert("LAB - " + numeroRandom);
-			$("#nextstep").attr("href", "singupdos.html");
+			$("#nextstep").attr("href", "signupdos.html");
 		}
 	}
 

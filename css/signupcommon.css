@@ -1,0 +1,49 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.contenedor{
+	position: relative;
+	height: 100vh;
+}
+
+.marcacion{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.back{
+	text-decoration: none;
+	color: grey;
+}
+
+.icono{
+	font-size: 1.5em;
+	padding: 0.9em 0px;
+}
+.titulo{
+	font-weight: 700;
+	font-size: 1.5em;
+	padding: 0.5em 0px;
+	margin: 0px;
+}
+
+.b-bottom{
+	border-bottom: 1px gray solid;
+	margin-bottom: 0.5em;
+}
+
+
+.next{
+	margin-top: 2.1em;
+	background-color: #F95759;
+	padding: 1em;
+	color: white;
+}
+
+.stepnext{
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+}

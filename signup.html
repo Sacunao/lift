@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+  	<meta charset="utf-8">
+  	<title>Lift</title>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/sweetalert.css" type="text/css">
+    <link rel="stylesheet" href="css/signupcommon.css" type="text/css">
+		<link rel="stylesheet" href="css/signup.css" type="text/css">
+	</head>
+	<body>
+      <!--Patalla de inicio-->
+      <section class="contenedor">
+        <section id="signup">
+          <div class="container-fluid">
+            <div class="row b-bottom">
+              <div class="col-xs-2">
+                <a class="back" href="index.html"><span class="icono text-center glyphicon glyphicon-menu-left"></span></a>
+              </div>
+              <div class="col-xs-10">
+                <p class="titulo text-center">Sign up</p>
+                <p class="text-center">Join now for free ride credit</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <header>
+          <div class="container-fluid">
+            <div class="input-group">
+              <select name="pais" id="country" class="form-control">
+                <option value="peru">Perú</option>
+                <option value="argentina">Argentina</option>
+                <option value="colombia">Colombia</option>
+                <option value="bolivia">bolivia</option>
+              </select>
+              <label for="inputEmail" class="sr-only">Número</label>
+              <span id ="codigoPostal" class="input-group-addon">+51</span>
+              <input type="tel" id="inputNumero" class="form-control" placeholder="1123456778" required autofocus>
+            </div>
+           </div> 
+        </header>
+        <section class="marcacion">
+          <div class="next text-center"><a id="nextstep" class="stepnext">Next</a></div>
+        </section>
+      </section>
+    <script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/sweetalert-dev.js"></script>
+		<script type="text/javascript" src="js/signup.js"></script>
+    </body>
+</html>

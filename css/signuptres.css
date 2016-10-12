@@ -1,0 +1,35 @@
+.bg-transparent{
+	background-color: transparent;
+}
+
+.iblock{
+	display: inline-block;
+}
+
+.m-05{
+	margin:  0.5em 0px;
+}
+
+.m-right05{
+	margin-right: 0.5em;
+}
+
+.bg-red{
+	background-color: #F95759;
+}
+
+.two-fields {
+    width: 100%;
+}
+
+.two-fields .input-group {
+    width: 100%;
+}
+
+.two-fields input {
+    width: 50% !important;
+}
+
+.mensaje{
+	width: 100%;
+}
