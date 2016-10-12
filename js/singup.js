@@ -1,13 +1,7 @@
-// Funcionalidades para Lyft
-
-// - Validar que solo se ingresen #s
-// - Validar que sean 9 #s como max.
-// - Generar un código aleatorio con la estructura LAB-XYZ
-// - Validar lo obvio
-
 $(document).ready(function() {
 	$("#inputNumero").keydown(validandoTeclas);
 	$("#inputNumero").keyup(longitud);
+	$("#nextstep").click(creandoCodigo);
 
 	function validandoTeclas(evento){
 		var ascii = evento.keyCode;
@@ -22,14 +16,23 @@ $(document).ready(function() {
 		var longitud = $(this).val().length;
 		if (longitud == 9) {
 			$("#nextstep").attr("href", "singupdos.html");
-			
 		} else if ((longitud > 9)){
 			$("#nextstep").removeAttr("href");
-			sweetAlert("Error...", "ingrese nùmero de 9 dígitos", "error");
+			sweetAlert("Error...", "ingrese nùmero válido de 9 dígitos", "error");
 		} else {
 			$("#nextstep").removeAttr("href");
 		}
 	}
+
+	function creandoCodigo(e){
+		var numero = $("#inputNumero").val().length;
+		var numeroRandom = Math.round(Math.random()*900) + 99;
+		if(numero == 9){
+			alert("LAB - " + numeroRandom);
+			$("#nextstep").attr("href", "singupdos.html");
+		}
+	}
+
 });
 
 

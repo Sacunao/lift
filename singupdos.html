@@ -28,17 +28,19 @@
       </section>
       <section class="formulario">
         <div class="container">
-            <form class="form-signin">
-              <div class="input-group m-0.5">
-                <span class="bg-transparent glyphicon glyphicon-user input-group-addon" id="basic-addon1"></span>
-                <input type="text" class="form-control" placeholder="First name" aria-describedby="basic-addon1">
-                <input type="text" class="form-control" placeholder="Last name" aria-describedby="basic-addon1">
-               </div>
-              <div class="input-group m-05">
-                <span class="bg-transparent glyphicon glyphicon-envelope input-group-addon" id="basic-addon1"></span>
-                <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
-              </div>
-            </form>
+          <form class="form-signin">
+            <div class="form-group two-fields input-pd">
+             <div class="input-group">
+               <span class="bg-transparent glyphicon glyphicon-user input-group-addon" id="basic-addon1"></span>
+               <input name="nombre" id="nombre" type="text" required class="form-control" placeholder="First name">
+               <input name="apellido" id="apellido" type="text" required class="form-control" placeholder="Last name">
+             </div>
+           </div>
+           <div class="input-group m-05">
+              <span class="bg-transparent glyphicon glyphicon-envelope input-group-addon" id="basic-addon1"></span>
+              <input type="email" class="form-control mensaje" placeholder="Email">
+           </div>
+          </form>
         </div>
       </section>
       <section class="text-center">
