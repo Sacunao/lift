@@ -8,8 +8,13 @@
 
 .two-fields input {
     width: 25% !important;
+    height: 2em;
 }
 
+.two-fields span {
+    width: 25% !important;
+    height: 2em;
+}
 .codigo{
 	margin-top: 6em;
 }
