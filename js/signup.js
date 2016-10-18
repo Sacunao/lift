@@ -2,43 +2,11 @@ $(document).ready(function() {
 	$("#inputNumero").keydown(validandoTeclas);
 	$("#inputNumero").keyup(longitud);
 	$("#nextstep").click(creandoCodigo);
+	$("#nextstep2").click(validandoCodigo);
 	$("#nextstep3").click(validandoForm);
 	$(".codenumber").keydown(validandoTeclas);
 	$(".codenumber").keyup(asignandoFocus);
 	$(".resend").click(reenviarCodigo);
-	$("#nextstep2").click(validandoCodigo);
-
-	
-	function validandoForm(e) {
-		e.preventDefault();
-		var nombre = $("#nombre").val();
-		var apellido = $("#apellido").val();
-		var email = $("#email").val();
-		var checkbox = $("#checkbox");
-
-		var regexNombre = /^[a-zñáéíóúü]+$/gi;
-        if (!regexNombre.test(nombre)) {
-            alert("Ingresa un nombre válido");
-        }
-
-        var regexApellido = /^[a-zñáéíóúü]+$/gi;
-        if (!regexApellido.test(apellido)) {
-            alert("Ingresa un apellido válido");
-        }
-		
-	  	var regexEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-		if(!regexEmail.test(email)){
-			alert("ingrese un correo válido");
-			// sweetAlert("Error...", "ingrese un correo válido", "error");
-		} 
-
-		// if (!checkbox.is(":checked")){
-	 //        alert("Acepta los terminos");
-		// } else {
-		// 	$("#nextstep3").attr("href", "signup.html");
-		// }
-
-	}
 
 	function validandoTeclas(evento){
 		var ascii = evento.keyCode;
@@ -79,6 +47,54 @@ $(document).ready(function() {
 
 	var codigoEntregado = localStorage.getItem("codigo");
 
+	function validandoCodigo(e){
+  		var codeInputs = $(".codenumber").eq(0).val() + $(".codenumber").eq(1).val() + $(".codenumber").eq(2).val();
+  		if (codeInputs == codigoEntregado){
+  			$(this).attr("href", "signuptres.html");	
+  		} else if (codeInputs != codigoEntregado) {
+  			sweetAlert("Error...", "El código ingresado incompleto o incorrecto.", "error");
+  		} 
+  	}
+
+  	function validandoForm(e){
+ 		var checkbox = $("#checkbox");
+  		if(validarInputs()){
+  			$("#nextstep3").attr("href", "signup.html");
+  		}
+  	}
+	
+	function validarInputs(e) {
+		var nombre = $("#nombre").val();
+		var apellido = $("#apellido").val();
+		var email = $("#email").val();
+		var checkbox = $("#checkbox");
+		var valor = true;
+
+		var regexNombre = /^[a-zñáéíóúü]+$/gi;
+        if (!regexNombre.test(nombre)) {
+            alert("Ingresa un nombre válido");
+            valor = false;
+        }
+
+        var regexApellido = /^[a-zñáéíóúü]+$/gi;
+        if (!regexApellido.test(apellido)) {
+            alert("Ingresa un apellido válido");
+            valor = false;
+        }
+		
+	  	var regexEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if(!regexEmail.test(email)){
+			alert("ingrese un correo válido");
+			valor = false;
+		} 
+
+		if(!checkbox.is(":checked")){
+  			alert("Acepta los terminos");
+  			valor = false;
+  		} 
+		return valor;
+	}
+
 	function asignandoFocus(e){
 	  var llave = e.keyCode;
       if($(this).val().length == $(this).attr("maxlength")){
@@ -90,15 +106,6 @@ $(document).ready(function() {
 
   	function reenviarCodigo(e){
   		swal("Por si lo olvidaste", codigoEntregado, "success");
-  	}
-
-  	function validandoCodigo(e){
-  		var codeInputs = $(".codenumber").eq(0).val() + $(".codenumber").eq(1).val() + $(".codenumber").eq(2).val();
-  		if (codeInputs == codigoEntregado){
-  			$(this).attr("href", "signuptres.html");	
-  		} else if (codeInputs != codigoEntregado) {
-  			sweetAlert("Error...", "El código ingresado incompleto o incorrecto.", "error");
-  		} 
   	}
 
 });
