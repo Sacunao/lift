@@ -59,7 +59,7 @@ $(document).ready(function() {
   	function validandoForm(e){
  		var checkbox = $("#checkbox");
   		if(validarInputs()){
-  			$("#nextstep3").attr("href", "signup.html");
+  			$("#nextstep3").attr("href", "mapa.html");
   		}
   	}
 	
