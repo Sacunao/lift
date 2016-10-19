@@ -1,10 +1,9 @@
 $(document).ready(function(e){
     if (navigator.geolocation) { 
-       navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
+        navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
     }
 
-    
-   function funcionExito(posicion) {
+  	function funcionExito(posicion) {
     var lat = posicion.coords.latitude;
     var lon = posicion.coords.longitude;
     var maps = new GMaps({
@@ -19,15 +18,16 @@ $(document).ready(function(e){
         maps.addMarker({
           lat: lat ,
           lng: lon ,
-          title: 'Lima',
+          title: "Lima",
           click: function(e) {
-            alert('You clicked in this marker');
+            alert("Estas aquí");
           }
         });
-    };
+    }
 
     function funcionError(error) {
-        alert("Error: Usted tiene que aceptar la solicitud de ubicación");
-    };
-
+        sweetAlert("Error...", "Usted tiene que aceptar la solicitud de ubicación.", "error");
+        /*alert("Error: Usted tiene que aceptar la solicitud de ubicación");*/
+    }
+ 
 });

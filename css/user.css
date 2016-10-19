@@ -1,0 +1,36 @@
+.foto-usuario{
+	position: relative;
+	width: 100%;
+	height: 50vh;
+}
+
+.baricon{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	color: rgba(0,0,0,0.6);
+}
+
+.edit{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background-color: rgba(0,0,0,0.6);
+	color: white;
+}
+.joindate{
+	margin: 0px 0.8em;
+	padding: 2% 0;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.3);
+	color: white;
+}
+.iconos{
+	color: grey;
+}
+.opciones{
+	margin: 1em;
+}
+.m-left{
+	margin-left: 0.8em;
+}

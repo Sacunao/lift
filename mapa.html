@@ -7,21 +7,84 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/sweetalert.css" type="text/css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/mapa.css">
 	</head>
 	<body>
-      <section id="mapContent">
-        <div id="mapa">
-          
+      <section>
+        <div class="container headermaps" id="headermaps">
+          <div class="row">
+            <div class="col-xs-2">
+              <div class="icon-border pull-left"  id="contacto">
+                <a class="glyphicon glyphicon-user icons"></a>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div class="text-center">
+                <img src="img/logodos.png" class="logo">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="icon-border pull-right">
+                <a class="glyphicon glyphicon-gift icons"></a>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>  
- 
+        <div class="panel d-none" id="panelUsuario">
+          <div class="perfil">
+            <div class="row b-bottom">
+              <div class="row text-center m-topbottom">
+                <img src="img/user.jpg" class="user">
+              </div>
+              <div class="row text-center">
+                <h3 id="usuarioPanel" class="text-center"></h3>
+              </div>
+              <div  class="row text-center m-topbottom">
+                <a id="view" href="user.html">View profile</a>
+              </div>
+            </div>
+            <div class="row opciones">
+              <span class="glyphicon glyphicon-map-marker pull-left m-lateral"></span>
+              <p class="pull-left">Home</p>
+            </div>
+            <div class="row opciones">
+              <span class="glyphicon glyphicon-gift pull-left m-lateral"></span>
+              <p class="pull-left">Free Rides</p>
+            </div>
+            <div class="row opciones">
+              <span class="glyphicon glyphicon-road pull-left m-lateral"></span>
+              <p class="pull-left">Ride history</p>
+            </div>
+            <div class="row opciones">
+              <span class="glyphicon glyphicon-credit-card pull-left m-lateral"></span>
+              <p class="pull-left">Payment</p>
+            </div>
+            <div class="row opciones">
+              <span class="glyphicon glyphicon-question-sign pull-left m-lateral"></span>
+              <p class="pull-left">Help</p>
+            </div>
+            <div class="row opciones">
+              <span class="glyphicon glyphicon-cog pull-left m-lateral"></span>
+              <p class="pull-left">Settings</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="mapa">
+          <div class="botonpic text-center">
+            <a class="newpic">Set a Pic</a></div>
+          </div>
+        </div>
+      </section> 
+
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/bootstrap.min.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvepe4ubYca9aR23pRtih8Oa6fz6Dq4lI"</script>
-      <script src="js/gmaps.js"></script>
+      <script type="text/javascript" src="js/sweetalert-dev.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvepe4ubYca9aR23pRtih8Oa6fz6Dq4lI"></script>
+      <script type="text/javascript" src="js/app.js"></script>
       <script type="text/javascript" src="js/mapa.js"></script>
-
     </body>
 </html>

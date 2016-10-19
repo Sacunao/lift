@@ -1,4 +1,99 @@
-#mapa{
+body{
+	overflow: hidden;
+}
+
+#mapa{ 
 	width: 100%;
 	height: 100vh;	
+}
+
+#headermaps{ 
+	position: relative;
+	background: transparent;
+	z-index:100;
+}
+.icon-border{ 
+	width: 2.5em;
+	height: 2.5em;
+	margin: 0.8em 0.5em;
+	border-radius: 50%;
+	background-color: white;
+	border: 1px solid gray;
+}
+
+.icons{ 
+	font-size: 1.2em;
+	color: grey;
+	margin: 23%;
+}
+.logo{ 
+	width: 5em;
+	height: auto;
+	margin: 0.8em 0.5em;
+}
+.panel{ 
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.6);
+}
+.d-none{ 
+	display: none;
+}
+.perfil{ 
+	background-color: white;
+	position: absolute;
+	height: 100vh;
+	width: 70%;
+}
+
+.b-bottom{ 
+	border-bottom: 1px solid grey;
+	margin: 0;
+}
+.m-topbottom{
+	margin: 0.5em 0;
+}
+
+#view{
+	color: gray;
+}
+
+#view:hover{
+	color: #F95759;
+}
+
+.user{
+	border-radius: 50%;
+	border: 1px solid dimgrey;
+	padding: 0.5em;
+	width: 50%;
+}
+.opciones{
+	margin: 3% 0;
+}
+
+.opciones:hover{
+	color: #F95759;
+}
+.m-lateral{
+	margin: 0px 1.1em;
+}
+
+.botonpic{
+	width: 96%;
+	position: absolute;
+	bottom: 0.5em;
+	margin: 0.5em;
+	background-color: #F95759;
+	border-radius: 5px;
+	padding: 1em;
+	color: white;
+}
+
+.newpic{
+	text-decoration: none;
+	color: white;
+	font-size: 1.3em;
 }
