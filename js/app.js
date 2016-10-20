@@ -70,6 +70,8 @@ $(document).ready(function() {
 		var apellido = $("#apellido").val();
 		var email = $("#email").val();
 		var checkbox = $("#checkbox");
+        localStorage.setItem("userName", nombre);
+		localStorage.setItem("userLastName",apellido);
 		var valor = true;
 
 		var regexNombre = /^[a-zñáéíóúü]+$/gi;
@@ -95,8 +97,7 @@ $(document).ready(function() {
   			valor = false;
   		} 
 		return valor;
-		localStorage.setItem("userName", nombre);
-		localStorage.setItem("userLastName",apellido);
+		
 		
 	}
 
