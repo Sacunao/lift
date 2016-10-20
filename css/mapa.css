@@ -1,16 +1,17 @@
 body{
 	overflow: hidden;
+	position: relative;
 }
 
 #mapa{ 
 	width: 100%;
-	height: 100vh;	
+	height: 100vh;
+	position: relative;	
 }
 
 #headermaps{ 
-	position: relative;
 	background: transparent;
-	z-index:100;
+	z-index: 1;
 }
 .icon-border{ 
 	width: 2.5em;
@@ -83,8 +84,8 @@ body{
 
 .botonpic{
 	width: 96%;
-	position: absolute;
-	bottom: 0.5em;
+	/*position: absolute;
+	bottom: 0.5em;*/
 	margin: 0.5em;
 	background-color: #F95759;
 	border-radius: 5px;
