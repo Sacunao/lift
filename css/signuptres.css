@@ -14,8 +14,8 @@
 	margin-right: 0.5em;
 }
 
-.bg-red{
-	background-color: #F95759;
+.m-left05{
+	margin-left: 0.5em;
 }
 
 .two-fields {
@@ -32,4 +32,16 @@
 
 .mensaje{
 	width: 100%;
+}
+.btn-group .check{
+	width: 2.4em;
+	height: 2.1em;
+	background-color: #F95759;
+	border: none;
+}
+.btn span.glyphicon {    			
+	opacity: 0;				
+}
+.btn.active span.glyphicon {				
+	opacity: 1;			
 }

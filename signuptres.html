@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/sweetalert.css" type="text/css">
+    <link rel="shortcut icon" type="img/png" href="img/icon.png">
     <link rel="stylesheet" href="css/signupcommon.css" type="text/css">
 		<link rel="stylesheet" href="css/signuptres.css" type="text/css">
 	</head>
@@ -32,20 +33,25 @@
             <div class="form-group two-fields input-pd">
              <div class="input-group">
                <span class="bg-transparent glyphicon glyphicon-user input-group-addon" id="basic-addon1"></span>
-               <input name="nombre" id="nombre" type="text" required class="form-control" placeholder="First name">
-               <input name="apellido" id="apellido" type="text" required class="form-control" placeholder="Last name">
+               <input name="nombre" id="nombre" type="text" required class="form-control" placeholder="First name" maxlength="20">
+               <input name="apellido" id="apellido" type="text" required class="form-control" placeholder="Last name" maxlength="20">
              </div>
            </div>
            <div class="input-group m-05">
               <span class="bg-transparent glyphicon glyphicon-envelope input-group-addon" id="basic-addon1"></span>
-              <input type="email" class="form-control" id="email" mensaje" placeholder="Email">
+              <input type="email" class="form-control" id="email" mensaje" placeholder="Email" maxlength="50">
            </div>
           </form>
         </div>
       </section>
       <section class="text-center">
-        <input id="checkbox" class="m-right05 bg-red" type="checkbox">
-        <span><strong class="m-right05">I agree to Lyft´s</strong><a class="m-right05" href="#">Terms of Service</a></span>
+        <div class="btn-group" data-toggle="buttons">
+          <label class="check btn btn-danger">
+            <input id="checkbox" type="checkbox" autocomplete="off">
+            <span class="text-center glyphicon glyphicon-ok"></span>
+          </label>
+        </div>
+        <span><strong class="m-right05 m-left05">I agree to Lyft´s</strong><a class="m-right05" href="#">Terms of Service</a></span>
       </section>
       <section class="marcacion">
         <div class="next text-center"><a id="nextstep3" class="stepnext">Next</a></div>

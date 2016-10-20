@@ -127,9 +127,6 @@ $(document).ready(function() {
         $("#panelUsuario").addClass("d-none");
         $("#headermaps").removeClass("d-none");
     }
-
-
-
 });
 
 
