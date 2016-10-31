@@ -121,12 +121,10 @@ $(document).ready(function() {
   	}
 
   	function mostrandoPanel(){
-    	$("#panelUsuario").removeClass("d-none");
-    	$("#headermaps").addClass("d-none");
-    }
+  		$("#panelUsuario").remove("d-none").toggle("slow");
+     }
     function ocultandoPanel(){
-        $("#panelUsuario").addClass("d-none");
-        $("#headermaps").removeClass("d-none");
+    	$("#panelUsuario").addClass("d-none").toggle("slow");
     }
 });
 

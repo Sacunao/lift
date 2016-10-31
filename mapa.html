@@ -14,22 +14,23 @@
 	</head>
 	<body>
       <section>
-        <div class="container headermaps" id="headermaps">
-          <div class="row">
-            <div class="col-xs-2">
-              <div class="icon-border pull-left" id="contacto">
-                <a class="glyphicon glyphicon-user icons"></a>
+        <div class="hero">
+          <div class="container headermaps" id="headermaps">
+            <div class="row">
+              <div class="col-xs-2">
+                <div class="icon-border pull-left" id="contacto">
+                  <a class="glyphicon glyphicon-user icons"></a>
+                </div>
               </div>
-            </div>
-            <div class="col-xs-8">
-              <div class="text-center">
-                <img src="img/logo.png" class="logo">
+              <div class="col-xs-8">
+                <div class="text-center">
+                  <img src="img/logodos.png" class="logo">
+                </div>
               </div>
-            </div>
-            <div class="col-xs-2">
-            
-              <div class="icon-border pull-right">
-                <a class="glyphicon glyphicon-gift icons"></a>
+              <div class="col-xs-2">
+                <div class="icon-border pull-right">
+                  <a class="glyphicon glyphicon-gift icons"></a>
+                </div>
               </div>
             </div>
           </div>
@@ -77,19 +78,22 @@
             </div>
           </div>
         </div>
-      </section>
-      <section>
-        <div id="mapa">
+        <section>
+          <div id="mapa">
+          </div>
+        </section>
+        <div class="ubicacion">
+          <input id="direccion" class="form-control" type="text">
+          <div class="botonpic text-center">
+              <a class="newpic">Set a Pic</a></div>
+          </div>
         </div>
-      </section> 
-      <div class="botonpic text-center">
-        <a class="newpic">Set a Pic</a></div>
-      </div>
-
+      </section>
+      
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/bootstrap.min.js"></script>
       <script type="text/javascript" src="js/sweetalert-dev.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvepe4ubYca9aR23pRtih8Oa6fz6Dq4lI"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvepe4ubYca9aR23pRtih8Oa6fz6Dq4lI" async defer></script>
       <script type="text/javascript" src="js/app.js"></script>
       <script type="text/javascript" src="js/mapa.js"></script>
     </body>
