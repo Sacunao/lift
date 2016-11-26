@@ -1,6 +1,6 @@
 ##PROYECTO LYFT
 
-Link de App móvil>  https://github.com/Sacunao/lyft
+Link de App móvil:  https://github.com/Sacunao/lyft
 
 ###MOBILE VIEW
 
